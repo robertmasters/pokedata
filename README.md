@@ -1,2 +1,2 @@
-# pokedata
-Website that displays Pokémon data
+# pokehuddle
+Personal Space for pokemon fans.
