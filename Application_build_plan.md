@@ -11,8 +11,8 @@ Pokemon Images: https://www.pokemon.com/us/pokedex/
 what is the intention of the application? 
 Personal Space for pokemon fans.
 MVP1: to use it as a personal hub for pokemon information, able to favorite pokemon, and view most favorited pokemon by a favorited vote tally.
-MVP2: make mvp1 into an android app using
-MVP2: able to research pokemon cards and able to favorite them
+MVP2: make mvp1 into an android app using android studio and kotlin
+MVP3: able to research pokemon cards and able to favorite them
 MVP3: able to create a roadmap on a pokemon card collection checklist
 MVP4: able to upload pokemon art and save random pokemon notes
 MVP5: then publish your own pokemon social front.
@@ -22,7 +22,6 @@ MVP8: able to view other peoples pokemon card journey
 MVP9: able to favorite other people
 
 future plans: 
-collective favorite pokemon leaderboards
 collective pokemon card leaderboards
 Game Walkthroughs
 upload videos
@@ -30,10 +29,14 @@ upload videos
 
 problems:
 1.) need a way to make login and username authentication:
+
 2.) need a way to create a user with name, username, password, favorite pokemon(this will be a list), preffered image for avatar: 
+
 3.) need to save favorite pokemon(this will save the endpoint needed to retrieve that pokemon data from external API)
+
 4.) need to save preffered image for avatar
 	image will be a selection of 10 different pokemon. 
+
 5.) need to save favorited pokemon so that the pokemon can have a leaderboard:
 	if a user saves a pokemon, then that pokemon will have a tally that will be sent to the leaderboard to populate the pokemon with the most saves
 
@@ -88,6 +91,6 @@ will need to probably add a personal photos list to the user on the back end
 [] 9th step:
 make all the website responsive for pc, tablet, and mobile use
 
-[] 8th step:
+[] 10th step:
 build an app for the website using Android Studio with Kotlin
 this will require me to repeat the steps from 1-9 except exclude any steps that call for backend tasks as the back end will have been made by now.
