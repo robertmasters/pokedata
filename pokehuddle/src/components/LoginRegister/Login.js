@@ -1,7 +1,8 @@
 import React from 'react'
-import axios from 'axios'
 import { useState } from 'react';
 import { useHistory } from 'react-router-dom';
+import { axiosWithAuth } from '../../utils/axiosWithAuth';
+
 const initialState = {
     credentials: {
     username: '',
@@ -26,7 +27,8 @@ function Login() {
        e.preventDefault();
 
        //make a post request with username and password(state.credentials) as the data body
-        axios.post('http://localhost:5000/api/login', state.credentials)
+        axiosWithAuth()
+        .post('/api/login', state.credentials)
         .then((res) => {
             console.log(res)
             //store token in local storage
@@ -42,18 +44,22 @@ function Login() {
     return (
       <div>
         <form onSubmit = {login}>
-            <input 
+        <label>Username:    
+        <input 
                 type = 'text'
                 name = 'username'
                 value = {state.credentials.username}
                 onChange ={handleChange}
             />
+            </label> 
+            <label>Password:
             <input
                 type="password"
                 name="password"
                 value={state.credentials.password}
                 onChange={handleChange}
             />
+            </label>
             <button>Log in</button>
         </form>
       </div>
@@ -61,3 +67,4 @@ function Login() {
   }
   
   export default Login;
+
