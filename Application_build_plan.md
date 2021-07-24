@@ -6,11 +6,13 @@
 1.	pokemon general information: https://pokeapi.co/ 
 2.	pokemon Card information: https://dev.pokemontcg.io/
 
+
 Wireframes: https://whimsical.com/pokemon-application-7tNN3rjxmqemQ67dHWQ5tn
 
 Text generator: https://textcraft.net/style/Textcraft/pokemon
 
 Pokemon Images: https://www.pokemon.com/us/pokedex/
+
 ---
 ## what is the intention of the application? 
 #### Personal Space for pokemon fans.
