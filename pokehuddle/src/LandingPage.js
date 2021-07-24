@@ -6,6 +6,7 @@ import PrivateRoute from './components/PrivateRoute';
 import Login from './components/LoginRegister/Login';
 import Dashboard from './components/Dashboard';
 import Register from './components/LoginRegister/Register';
+import '../src/LandingPage.css'
 function LandingPage() {
 
   const logout = () => {
@@ -16,7 +17,7 @@ function LandingPage() {
 
   return (
     <Router>
-      <div className="App">
+      <div className="main-container">
       
         <div className = "Banner">
           <img src = {require('./images/PokeHuddle-Title.png').default} alt = 'Name Banner' />
@@ -24,6 +25,11 @@ function LandingPage() {
         
         <div className = "Main-container">
           <img src = {require('./images/ashpika.png').default} alt = 'Ash and Pikachu landing page' />
+
+            <div className = "description">
+              Pokehuddle is a personal space for you to research Pokemon, favorite them, view most favorited pokemon, view other pokemon fans art, and upload your own!
+            </div>
+
             <Link to ='/login'>Login</Link>
             <span> | </span>
             <Link to ='/register'>Not a Member?</Link>
@@ -42,6 +48,7 @@ function LandingPage() {
             </div>
         </div>
       </div>
+
     </Router>
   );
 }
