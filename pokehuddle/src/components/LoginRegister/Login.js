@@ -1,7 +1,8 @@
 import React from 'react'
 import { useState } from 'react';
-import { useHistory } from 'react-router-dom';
+import { Link, useHistory } from 'react-router-dom';
 import { axiosWithAuth } from '../../utils/axiosWithAuth';
+import './LoginRegister.css'
 
 const initialState = {
     credentials: {
@@ -42,27 +43,47 @@ function Login() {
     }
 
     return (
-      <div>
+      <div className = "main-container">
+        <header className = "header">
+          <div className = "banner">
+            <img className ="bannerimg" src = {require('../../images/PokeHuddle-Title.png').default} alt = 'Name Banner' />
+          </div>
+        </header>
 
-        <form onSubmit = {login}>
-        <label>Username:    
-        <input 
-                type = 'text'
-                name = 'username'
-                value = {state.credentials.username}
-                onChange ={handleChange}
-            />
-            </label> 
-            <label>Password:
-            <input
-                type="password"
-                name="password"
-                value={state.credentials.password}
-                onChange={handleChange}
-            />
-            </label>
-            <button>Log in</button>
-        </form>
+        <div className = "middle-section">
+          <div className = "ashPikaimg-container">
+            <img className ="ashpikaimg" src = {require('../../images/ashpika.png').default} alt = 'Ash and Pikachu landing page' />
+          </div>
+
+          <div className= "login-section">
+
+            <div className = "description login-flex-item">
+            PokeHuddle is a personal space for you to research Pokemon, favorite them, view leaderboards, view other members fan art, and upload your own!
+            </div>
+
+            <div className = "selection  login-flex-item">
+              <Link to ='/register' className = 'select-logreg'>Not a Member?</Link>
+            </div>
+
+            <form className = 'login-flex-item' onSubmit = {login}>
+            <input className = 'form-item'
+                    type = 'text'
+                    name = 'username'
+                    placeholder = "Username"
+                    value = {state.credentials.username}
+                    onChange ={handleChange}
+                />
+                <input className = 'form-item'
+                    type="password"
+                    name="password"
+                    placeholder = "Password"
+                    value={state.credentials.password}
+                    onChange={handleChange}
+                />
+                <button className = 'form-item btn'>Log in</button>
+            </form>
+          </div>
+        </div>
       </div>
     );
   }

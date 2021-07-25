@@ -5,6 +5,11 @@ import { axiosWithAuth } from '../utils/axiosWithAuth';
 
 function dashboard() {
 
+  const logout = () => {
+    //also send a request to /api/logout once api is set up
+    window.localStorage.removeItem('token')
+  }
+
     function getData(){
         axiosWithAuth()
         .get('/api/data')
@@ -15,6 +20,7 @@ function dashboard() {
 
   return (
     <Router>
+        <Link onClick={logout}>Logout</Link>
         <div onClick = {getData}>click me</div>
     </Router>
   );
