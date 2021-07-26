@@ -7,6 +7,6 @@ export const axiosWithAuth = () => {
         headers: {
             Authorization: JSON.parse(window.localStorage.getItem('token')),
         },
-        // baseURL: process.env.REACT_APP_LOCAL_API,
+        baseURL: process.env.REACT_APP_LOCAL_API,
     })
 }

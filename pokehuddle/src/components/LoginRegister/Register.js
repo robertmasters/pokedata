@@ -20,17 +20,17 @@ export default function Register() {
     const history = useHistory()
 
     function register () {
-        // history.push('/login')
+        history.push('/login')
     }
 
 function handleChange(e) {
-    // setState({
-    //     credentials: {
-    //         ...state.credentials,
-    //         [e.target.name]: e.target.value
+    setState({
+        credentials: {
+            ...state.credentials,
+            [e.target.name]: e.target.value
             
-    //     }
-    // })
+        }
+    })
    }
     return (
 
