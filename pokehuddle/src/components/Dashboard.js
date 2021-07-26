@@ -7,14 +7,14 @@ function dashboard() {
 
   const logout = () => {
     //also send a request to /api/logout once api is set up
-    window.localStorage.removeItem('token')
+    // window.localStorage.removeItem('token')
   }
 
     function getData(){
-        axiosWithAuth()
-        .get('/api/data')
-        .then((res) => console.log('res: ',res))
-        .catch((err) => console.log(err.response.data.error))
+        // axiosWithAuth()
+        // .get('/api/data')
+        // .then((res) => console.log('res: ',res))
+        // .catch((err) => console.log(err.response.data.error))
     }
 
 
