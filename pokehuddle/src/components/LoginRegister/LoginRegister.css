@@ -107,20 +107,11 @@ Link:focus-visible{
     box-shadow: #4378b1 0px 0px 3px;
 }
 
-/* .registration-prompt {
-    font-size: 20px;
-    font-weight: 600;
-    color: #2d537c;
-} */
-
 form {
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* border: 3px solid black; */
 }
-
-
 
 .form-item {
     margin: 2px;
@@ -165,7 +156,6 @@ input:focus-visible {
 }
 
 .btn:active{
-    /* box-shadow: #333 0px 0px 3px; */
     color: #fff537;
     background-color: #2d537c;
 }
@@ -200,7 +190,6 @@ input:focus-visible {
 
     .ashpikaimg {
         display: none;
-        /* height: 100%; */
     }
     
     .description {
