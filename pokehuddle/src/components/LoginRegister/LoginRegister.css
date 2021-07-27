@@ -177,3 +177,35 @@ input:focus-visible {
         width: 300px;
     }
 }
+
+@media (max-width: 800px) {
+
+    .description {
+        width: 200px;
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 570px) {
+
+    .main-container{
+        width: 50%;
+        margin: 0 auto;
+    }
+
+    .bannerimg {
+        margin-top: 10px;
+        width: 100%;
+    }
+
+    .ashpikaimg {
+        display: none;
+        /* height: 100%; */
+    }
+    
+    .description {
+        width: 60%;
+        font-size: 15px;
+        margin: 0 auto;
+    }
+}
