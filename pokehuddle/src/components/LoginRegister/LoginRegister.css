@@ -47,14 +47,12 @@ html {
 
 .ashpikaimg {
     width: 80%;
-    /* height: 100%; */
 }
 
 .login-section {
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* border: 3px solid black; */
     width: 600px;
     justify-content: space-around;
 
@@ -71,23 +69,14 @@ html {
     font-weight: 550;
     color: #2d537c;
     line-height: 25px;
-    /* background-color: #f3e73d;
-    border-radius: 15px;
-    padding: 10px; */
-    /* border: 1px solid #2d537c; */
     text-shadow: #2d537c 0px 0px 1px;
-
-    /* border: 3px solid black; */
 }
 .registration-prompt {
     font-size: 25px;
     font-weight: 550;
-    /* text-shadow: #333 0px 0px 5px; */
-    
 }
 
 .selection{
-    /* border: 3px solid black; */
     font-size: 13px;    
     color: #525252;
     font-weight: bold;
