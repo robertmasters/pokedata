@@ -9,13 +9,23 @@
 .banner-container {
     display: flex;
     flex-direction: row;
-    border: 3px solid black;
 }
 
 .search {
     /* border: 3px solid black; */
     width: 20%;
-    margin-left: 80px;    
+    margin-left: 80px;
+}
+
+input {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+input:focus-visible {
+    outline: 0px;
+    background-color: #7dbcff;
+
 }
 
 .bannerimg{
