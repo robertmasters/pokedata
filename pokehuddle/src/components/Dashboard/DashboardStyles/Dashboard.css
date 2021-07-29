@@ -1,0 +1,12 @@
+.dash-container {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.sidebar {
+    margin-top: 10px;
+    padding-top: 20px;
+
+}

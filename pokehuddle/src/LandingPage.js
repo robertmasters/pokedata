@@ -7,6 +7,7 @@ import Login from './components/LoginRegister/Login';
 import Dashboard from './components/Dashboard/Dashboard';
 import Register from './components/LoginRegister/Register';
 import '../src/LandingPage.css'
+import Research from './components/Pages/Research';
 function LandingPage() {
 
   return (
@@ -19,10 +20,12 @@ function LandingPage() {
           <div className= "Route-container">
               <Switch>
                 {/* <PrivateRoute exact path = '/dashboard' component = {Dashboard}></PrivateRoute> */}
+                <Route exact path = '/' component = {Login} />
                 <Route path = '/test' component = {Dashboard} />
                 <Route path = '/login' component ={Login} />
                 <Route path = '/register' component ={Register} />
-                <Route component = {Login} />
+                <Route path = '/research' component ={Research} />
+                
               </Switch>
             </div>
         </div>
@@ -31,3 +34,5 @@ function LandingPage() {
 }
 
 export default LandingPage;
+
+<Route component = {Login} />
