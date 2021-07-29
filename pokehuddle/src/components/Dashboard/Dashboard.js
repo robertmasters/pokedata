@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { BrowserRouter as Router, Route, Link, Switch } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Link, Switch, useHistory} from 'react-router-dom';
 import SideBar from './SideBar'
 import { axiosWithAuth } from '../../utils/axiosWithAuth';
 import DashLanding from '../Pages/DashLanding'
@@ -9,20 +9,22 @@ import PersonalNotes from '../Pages/PersonalNotes'
 import Photos from '../Pages/Photos'
 import Research from '../Pages/Research';
 import './DashboardStyles/Dashboard.css'
+import axios from 'axios';
 
 const initialState = {
-  credentials: {
-  search: ''
+  pokemon: {
+  pokename: ''
 }
 }
 function Dashboard() {
 
-  const [state, setState] = useState(initialState)
+  const [searchName, setSearchName] = useState(initialState)
+  const history = useHistory()
 
  function handleChange(e) {
-  setState({
-      credentials: {
-          ...state.credentials,
+  setSearchName({
+    pokemon: {
+          ...searchName.pokemon,
           [e.target.name]: e.target.value
       }
   })
@@ -34,10 +36,17 @@ function Dashboard() {
   }
 
     function getData(){
-        // axiosWithAuth()
-        // .get('/api/data')
-        // .then((res) => console.log('res: ',res))
-        // .catch((err) => console.log(err.response.data.error))
+      console.log("state", searchName.pokemon.pokename)
+      console.log('click')
+        axios
+        .get(`https://pokeapi.co/api/v2/pokemon/${searchName.pokemon.pokename}`)
+        .then(
+          (res) => console.log('res: ',res)
+          
+          )
+        .catch((err) => console.log(err.response.data.error))
+        history.push('/test/research') //sends me to the dashboard page 
+        
     }
 
 
@@ -49,15 +58,19 @@ function Dashboard() {
 
             <img className ="bannerimg" src = {require('../../images/PokeHuddle-Title.png').default} alt = 'Name Banner' />
           
-            
+            {/*
             <input className = 'search'
             type = 'text'
-            name = 'search'
-            placeholder = "Search"
-            value = {state.credentials.search}
+            name = 'pokename'
+            placeholder = "Pokemon name"
+            value = {searchName.pokemon.pokename}
             onChange ={handleChange}
+            
             />
-          </div>
+            <button onClick = {getData} className = "search-btn">Search</button>
+            */}
+
+          </div> 
 
 
         <div className= "center-content">
