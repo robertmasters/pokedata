@@ -6,8 +6,6 @@ import PrivateRoute from './components/PrivateRoute';
 import Login from './components/LoginRegister/Login';
 import Dashboard from './components/Dashboard/Dashboard';
 import Register from './components/LoginRegister/Register';
-import '../src/LandingPage.css'
-import Research from './components/Pages/Research';
 function LandingPage() {
 
   return (
@@ -24,7 +22,6 @@ function LandingPage() {
                 <Route path = '/test' component = {Dashboard} />
                 <Route path = '/login' component ={Login} />
                 <Route path = '/register' component ={Register} />
-                <Route path = '/research' component ={Research} />
                 
               </Switch>
             </div>

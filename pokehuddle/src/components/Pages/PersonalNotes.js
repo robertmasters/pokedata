@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function PersonalNotes() {
     return (
-        <div>
+        <div className = "component-container">
             PersonalNotes
         </div>
     )
