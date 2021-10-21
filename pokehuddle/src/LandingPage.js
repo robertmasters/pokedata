@@ -15,7 +15,7 @@ function LandingPage() {
               <Link onClick={logout}>Logout</Link>
               <Link to ='/dashboard'>dashboard</Link>
            */}
-          <div className= "Route-container">
+          <div className="Route-container">
               <Switch>
                 {/* <PrivateRoute exact path = '/dashboard' component = {Dashboard}></PrivateRoute> */}
                 <Route exact path = '/' component = {Login} />

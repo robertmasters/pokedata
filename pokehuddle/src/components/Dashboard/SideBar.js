@@ -9,6 +9,8 @@ function SideBar() {
     const logout = () => {
         //also send a request to /api/logout once api is set up
         // window.localStorage.removeItem('token')
+        console.log("clicked logged out")
+
       }
 
 
@@ -26,7 +28,7 @@ function SideBar() {
                         <Link className = "link" to ='/test/leaderboards'>Leaderboards</Link>
                         <Link className = "link" to ='/test/personalnotes'>Personal Notes</Link>
                         <Link className = "link" to ='/test/photos'>Photos</Link>
-                        <Link className = "link" onClick={logout}>Logout</Link>
+                        <Link className = "link" onClick={logout} to ='/'>Logout</Link>
                     </div>
                 </div>
             </div>
@@ -34,8 +36,3 @@ function SideBar() {
 }
 
 export default SideBar;
-
-
-                    // <Route path = '/research' >
-                    //     <Research />
-                    // </Route>

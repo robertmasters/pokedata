@@ -38,10 +38,10 @@ export default function Research() {
        }, [])
 
        function getData(){
-        console.log("state", searchName.pokemon.pokename)
+        console.log("state", searchName.pokemon.pokename.toLowerCase())
         console.log('click')
           axios
-          .get(`https://pokeapi.co/api/v2/pokemon/${searchName.pokemon.pokename}`)
+          .get(`https://pokeapi.co/api/v2/pokemon/${searchName.pokemon.pokename.toLowerCase()}`)
           .then(
             (res) => {
             console.log('res: ',res)

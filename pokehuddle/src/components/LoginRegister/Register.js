@@ -12,9 +12,6 @@ const initialState = {
   }
 }
 
-
-
-
 export default function Register() {
     const [state, setState] = useState(initialState)
     const history = useHistory()
@@ -89,55 +86,3 @@ function handleChange(e) {
         </div>
     )
 }
-
-// <div className = "main-container">
-// <header className = "header">
-//   <div className = "banner">
-//     <img className ="bannerimg" src = {require('../../images/PokeHuddle-Title.png').default} alt = 'Name Banner' />
-//   </div>
-// </header>
-
-// <div className = "middle-section">
-//   <div className = "ashPikaimg-container">
-//     <img className ="ashpikaimg" src = {require('../../images/ashpika.png').default} alt = 'Ash and Pikachu landing page' />
-//   </div>
-
-//   <div className= "login-section">
-
-//     <div className = "description login-flex-item">
-//     PokeHuddle is a personal space for you to research Pokemon, favorite them, view most favorited Pokemon, view other PokeHuddle members fan art, and upload your own!
-//     </div>
-
-//     <div className = "selection  login-flex-item">
-//       <Link to ='/login'>Login</Link>
-//       <span> | </span>
-//       <Link to ='/register'>Not a Member?</Link>
-//     </div>
-
-//     <form className = 'login-flex-item' onSubmit = {login}>
-//     <input className = 'form-item'
-//     type = 'text'
-//     name = 'name'
-//     placeholder = "Enter Name"
-//     value = {state.credentials.name}
-//     onChange ={handleChange}
-//     />
-//     <input className = 'form-item'
-//             type = 'text'
-//             name = 'username'
-//             placeholder = "Username"
-//             value = {state.credentials.username}
-//             onChange ={handleChange}
-//         />
-//         <input className = 'form-item'
-//             type="password"
-//             name="password"
-//             placeholder = "Password"
-//             value={state.credentials.password}
-//             onChange={handleChange}
-//         />
-//         <button className = 'form-item btn'>Log in</button>
-//     </form>
-//   </div>
-// </div>
-// </div>
