@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import {BrowserRouter as Router, Route, Switch} from 'react-router-dom'
+import {BrowserRouter as Router, Link, Route, Switch} from 'react-router-dom'
 import axios from 'axios'
 
 import PrivateRoute from './components/PrivateRoute';
@@ -21,10 +21,10 @@ function LandingPage() {
                 <Route exact path = '/' component = {Login} />
                 <Route path = '/test' component = {Dashboard} />
                 <Route path = '/login' component ={Login} />
-                <Route path = '/register' component ={Register} />
-                
+                <Route path = '/register' component ={Register} />  
               </Switch>
-            </div>
+            <a target="_blank" className = "link" rel="noreferrer" href="https://github.com/robertmasters/pokehuddle/blob/main/Application_build_plan.md">Github  </a>with roadmap for app
+          </div>
         </div>
     </Router>
   );

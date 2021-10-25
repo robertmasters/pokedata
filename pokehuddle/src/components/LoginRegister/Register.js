@@ -37,6 +37,7 @@ function handleChange(e) {
                 <img className ="bannerimg" src = {require('../../images/PokeHuddle-Title.png').default} alt = 'Name Banner' />
             </div>
             </header>
+            <div>User auth not set up<Link className = "link" to ='/test/research'>click here </Link>to enter app</div>
             
             <div className = "middle-section">
             <div className = "ashPikaimg-container">
