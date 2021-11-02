@@ -29,22 +29,17 @@ export default function Research() {
         .get(`https://pokeapi.co/api/v2/pokemon/pikachu`)
         .then(
           (res) => {
-            console.log('res', res)
           setPokemon(res.data)
-          
           }
           )
         .catch((err) => console.log(err.response.data.error))
        }, [])
 
        function getData(){
-        console.log("state", searchName.pokemon.pokename.toLowerCase())
-        console.log('click')
           axios
           .get(`https://pokeapi.co/api/v2/pokemon/${searchName.pokemon.pokename.toLowerCase()}`)
           .then(
             (res) => {
-            console.log('res: ',res)
             setPokemon(res.data)
             }
             )
@@ -75,8 +70,7 @@ export default function Research() {
             <h1 className = "pokemon-name">{pokemon.name.charAt(0).toUpperCase() + pokemon.name.slice(1)}</h1> {/*name comes in all lower case, this function allows me to uppercase the first letter of the string */}
             <h2>No. {pokemon.id}</h2>
             <div className = 'sprites'>   
-                <img className ="pokemon-image" src={pokemon.sprites.front_default} alt = 'pokemon'/>
-                <img className ="pokemon-image" src={pokemon.sprites.back_default} alt = 'pokemon'/>
+                <img className ="pokemon-image" src={pokemon.sprites.other["official-artwork"].front_default} alt = 'pokemon'/>
             </div>
             <div className = 'pokemon-metrics'>
                 <div>Weight: {Math.round(pokemon.weight * 0.2204623)} lbs.</div>
