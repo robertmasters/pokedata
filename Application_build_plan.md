@@ -19,7 +19,7 @@ Pokemon Images: https://www.pokemon.com/us/pokedex/
 ## MVPs:
 1. MVP1: to use it as a personal hub for pokemon information, able to favorite pokemon, and view most favorited pokemon by a favorited vote tally.
 2. MVP2: make mvp1 into an android app using android studio and kotlin
-3. MVP3: able to research pokemon cards and able to favorite them
+3. MVP3: able to research pokemon cards and able to favorite them, search by type, number, generation, through search box(number), through drop down list(type, generation)
 3. MVP3: able to create a roadmap on a pokemon card collection checklist
 4. MVP4: able to upload pokemon art and save random pokemon notes
 5. MVP5: then publish your own pokemon social front.
