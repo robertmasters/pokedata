@@ -1,19 +1,13 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
-import {BrowserRouter as Router, Route, Switch} from 'react-router-dom'
 import './DashboardStyles/SideBar.css'
-import Research from '../Pages/Research';
 function SideBar() {
-
 
     const logout = () => {
         //also send a request to /api/logout once api is set up
         // window.localStorage.removeItem('token')
         console.log("clicked logged out")
-
       }
-
-
 
     return (
             <div className = "nav-bar-container">
