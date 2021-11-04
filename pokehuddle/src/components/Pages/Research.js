@@ -8,8 +8,6 @@ const searchInitialState = {
         }
     }
 
-
-
 export default function Research() {
 
     const [searchName, setSearchName] = useState(searchInitialState)
