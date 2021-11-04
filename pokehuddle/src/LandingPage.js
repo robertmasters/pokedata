@@ -12,7 +12,7 @@ function LandingPage() {
       <div className="main-container">
           <div className="Route-container">
               <Switch>
-                <PrivateRoute exact path = '/dashboard' component = {Dashboard}></PrivateRoute>
+                <PrivateRoute exact path = '/dashboard' component = {Dashboard}></PrivateRoute> 
                 <Route exact path = '/' component = {Login} />
                 <Route path = '/test' component = {Dashboard} />
                 <Route path = '/login' component ={Login} />
