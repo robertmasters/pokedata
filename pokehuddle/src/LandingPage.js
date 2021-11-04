@@ -1,6 +1,5 @@
-import React, { useEffect, useState } from 'react';
-import {BrowserRouter as Router, Link, Route, Switch} from 'react-router-dom'
-import axios from 'axios'
+import React from 'react';
+import {BrowserRouter as Router, Route, Switch} from 'react-router-dom'
 import PrivateRoute from './components/PrivateRoute';
 import Login from './components/LoginRegister/Login';
 import Dashboard from './components/Dashboard/Dashboard';
