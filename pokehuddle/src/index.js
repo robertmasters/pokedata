@@ -1,13 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import LandingPage from './LandingPage';
+import App from './App.js';
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <React.StrictMode>
   <div className = "app">
-    <LandingPage />
+    <App />
     </div>
   </React.StrictMode>,
   document.getElementById('root')

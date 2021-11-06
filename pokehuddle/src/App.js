@@ -4,7 +4,7 @@ import PrivateRoute from './components/PrivateRoute';
 import Login from './components/LoginRegister/Login';
 import Dashboard from './components/Dashboard/Dashboard';
 import Register from './components/LoginRegister/Register';
-function LandingPage() {
+function App() {
 
   return (
     <Router>
@@ -24,6 +24,6 @@ function LandingPage() {
   );
 }
 
-export default LandingPage;
+export default App; 
 
 <Route component = {Login} />
