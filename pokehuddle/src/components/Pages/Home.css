@@ -1,12 +1,9 @@
-
-
 h1 {
     color: #2d537c;
 }
-.dash-landing-container {
+.home-container {
     display: flex;
     flex-direction: column;
-    
 }
 
 .favorite-notification-container {
@@ -24,7 +21,7 @@ h1 {
     background-color: #ffe093;
 }
 
-.news-container {
+.news {
     margin: 0 auto;
     width: 815px;
     height: 300px;

@@ -1,7 +1,7 @@
 import React from 'react';
 import {Route, Switch} from 'react-router-dom';
 import SideBar from './SideBar'
-import DashLanding from '../Pages/DashLanding'
+import Home from '../Pages/Home'
 import FavoritePokemon from '../Pages/FavoritePokemon'
 import Leaderboards from '../Pages/Leaderboards'
 import PersonalNotes from '../Pages/PersonalNotes'
@@ -22,13 +22,13 @@ function Dashboard() {
                     <SideBar />
                 </div>
             <Switch>
-                <Route path = '/test/dashlanding' component = {DashLanding} />
+                <Route path = '/test/home' component = {Home} />
                 <Route path = '/test/research' component = {Research} />
                 <Route path = '/test/favoritepokemon' component = {FavoritePokemon} />
                 <Route path = '/test/leaderboards' component = {Leaderboards} />
                 <Route path = '/test/personalnotes' component = {PersonalNotes} />
                 <Route path = '/test/photos' component = {Photos} />
-                <Route component = {DashLanding} />
+                <Route component = {Home} />
             </Switch>
             </div>
         </div>

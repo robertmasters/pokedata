@@ -1,11 +1,11 @@
 import React from 'react'
-import './DashLanding.css'
+import './Home.css'
 
-export default function DashLanding() {
+export default function Home() {
     return (
-        <div className = "component-container">
+        <div>
             <h1>Welcome!</h1>
-            <div className = "dash-landing-container">
+            <div className = "home-container">
                 <div className = "favorite-notification-container">
                     <div>
                         <img className ="favoritestextimg" src = {require('../../images/favoritestext.png').default} alt = 'favorites' />
@@ -15,7 +15,7 @@ export default function DashLanding() {
                     </div>
                 </div>
                 
-                <div className = "news-container">
+                <div className = "news">
                     <img className ="newstextimg" src = {require('../../images/newstext.png').default} alt = 'news' />
                 </div>
             </div>
