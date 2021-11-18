@@ -1,6 +1,7 @@
 import React from 'react'
 import { useState } from 'react';
 import { Link, useHistory } from 'react-router-dom';
+import Header from './Header';
 
 const initialState = {
     credentials: {
@@ -28,11 +29,7 @@ function handleChange(e) {
    }
     return (
         <div className = "main-container">
-            <header className = "header">
-                <div className = "banner">
-                    <img className ="bannerimg" src = {require('../../images/PokeHuddle-Title.png').default} alt = 'Name Banner' />
-                </div>
-            </header>
+            <Header />
             <div>User auth not set up<Link className = "link" to ='/test/research'>click here </Link>to enter app</div>
             
             <div className = "middle-section">
