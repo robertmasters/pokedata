@@ -59,7 +59,7 @@ export default function Research() {
             </div>
             <div></div>
         
-            {pokemon != '' ?
+            {pokemon !== '' ?
                 <div className = 'pokemon-details-container'>
                     <h1 className = "pokemon-name">{pokemon.name.charAt(0).toUpperCase() + pokemon.name.slice(1)}</h1> {/*name comes in all lower case, this function allows me to uppercase the first letter of the string */}
                     <h2>No. {pokemon.id}</h2>

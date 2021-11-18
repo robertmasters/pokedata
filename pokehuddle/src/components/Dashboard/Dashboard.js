@@ -13,7 +13,7 @@ function Dashboard() {
 
     return (
         <div className= "dash-container">
-            <div classNam= "banner-container">
+            <div className= "banner-container">
                 <img className ="bannerimg" src = {require('../../images/PokeHuddle-Title.png').default} alt = 'Name Banner' />
             </div> 
 
