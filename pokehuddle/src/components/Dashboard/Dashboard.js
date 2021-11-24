@@ -8,13 +8,11 @@ import PersonalNotes from '../Pages/PersonalNotes'
 import Photos from '../Pages/Photos'
 import Research from '../Pages/Research';
 import './DashboardStyles/Dashboard.css'
-import Header from '../LoginRegister/Header';
 
 function Dashboard() {
 
     return (
         <div className= "dash-container">
-            <Header />
 
             <div className= "center-content">
                 <div className= "sidebar">

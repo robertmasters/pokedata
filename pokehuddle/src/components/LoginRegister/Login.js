@@ -2,7 +2,6 @@ import React from 'react'
 import { useState } from 'react';
 import { Link, useHistory } from 'react-router-dom';
 import { axiosWithAuth } from '../../utils/axiosWithAuth';
-import Header from './Header';
 import './LoginRegister.css'
 
 const initialState = {
@@ -42,7 +41,6 @@ function Login() {
 
 	return (
 		<div className = "main-container">
-			<Header />
 
 			<div>User auth not set up<Link className = "link" to ='/test/research'>click here </Link>to enter app</div>
 

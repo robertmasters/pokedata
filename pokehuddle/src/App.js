@@ -5,12 +5,14 @@ import Login from './components/LoginRegister/Login';
 import Dashboard from './components/Dashboard/Dashboard';
 import Register from './components/LoginRegister/Register';
 import PageNotFound from './components/Pages/PageNotFound';
+import Header from './components/LoginRegister/Header';
 function App() {
 
   return (
     <Router>
       <div className="main-container">
           <div className="Route-container">
+          <Header/>
               <Switch>
                 <PrivateRoute exact path = '/dashboard' component = {Dashboard}></PrivateRoute> 
                 <Route exact path = '/' component = {Login} />
