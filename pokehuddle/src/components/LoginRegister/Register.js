@@ -10,12 +10,12 @@ const initialState = {
   }
 }
 
-export default function Register() {
+function Register() {
     const [state, setState] = useState(initialState)
     const history = useHistory()
 
     function goToLogin () {
-        history.push('/login')
+        history.push('/')
     }
 
 function handleChange(e) {
@@ -44,7 +44,7 @@ function handleChange(e) {
                 
                     <div className = "selection login-flex-item">
                         Already a member? &nbsp;
-                        <Link to ='/login' className = 'select-logreg'>Login</Link>
+                        <Link to ='/' className = 'select-logreg'>Login</Link>
                     </div>
 
                     <form className = 'login-flex-item' onSubmit = {goToLogin}>
@@ -77,3 +77,5 @@ function handleChange(e) {
         </div>
     )
 }
+
+export default Register;

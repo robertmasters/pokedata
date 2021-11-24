@@ -16,9 +16,8 @@ function App() {
               <Switch>
                 <PrivateRoute exact path = '/dashboard' component = {Dashboard}></PrivateRoute> 
                 <Route exact path = '/' component = {Login} />
-                <Route path = '/test' component = {Dashboard} />
-                <Route path = '/login' component ={Login} />
-                <Route path = '/register' component ={Register} /> 
+                <Route exact path = '/test' component = {Dashboard} />
+                <Route exact path = '/register' component = {Register} /> 
                 <Route component = {PageNotFound} /> 
               </Switch>
             <a target="_blank" className = "link" rel="noreferrer" href="https://github.com/robertmasters/pokehuddle/blob/main/Application_build_plan.md">Github  </a>with roadmap for app
