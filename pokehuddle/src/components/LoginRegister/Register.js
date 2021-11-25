@@ -75,7 +75,7 @@ function handleChange(e) {
                 </div>
             </div>
         </div>
-    )
-}
+    );
+};
 
 export default Register;
