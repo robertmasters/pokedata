@@ -8,6 +8,7 @@ import PersonalNotes from '../Pages/PersonalNotes'
 import Photos from '../Pages/Photos'
 import Research from '../Pages/Research';
 import './DashboardStyles/Dashboard.css'
+import DashboardRoutes from './DashboardRoutes';
 
 function Dashboard() {
 
@@ -18,15 +19,7 @@ function Dashboard() {
                 <div className= "sidebar">
                     <SideBar />
                 </div>
-                <Switch>
-                    <Route path = '/test/home' component = {Home} />
-                    <Route path = '/test/research' component = {Research} />
-                    <Route path = '/test/favoritepokemon' component = {FavoritePokemon} />
-                    <Route path = '/test/leaderboards' component = {Leaderboards} />
-                    <Route path = '/test/personalnotes' component = {PersonalNotes} />
-                    <Route path = '/test/photos' component = {Photos} />
-                    <Route component = {Home} />
-                </Switch>
+                <DashboardRoutes />
             </div>
         </div>
     );
