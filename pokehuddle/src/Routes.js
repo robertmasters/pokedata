@@ -7,8 +7,7 @@ import Register from './components/LoginRegister/Register';
 import PageNotFound from './components/Pages/PageNotFound';
 
 function Routes() {
-//   const location = useLocation();
-//   console.log("location: ",location)
+
   return (
     <Router>
               <Switch>
@@ -20,6 +19,6 @@ function Routes() {
               </Switch>
     </Router>
   );
-}
+};
 
 export default Routes; 
