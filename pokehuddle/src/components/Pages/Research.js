@@ -48,14 +48,14 @@ export default function Research() {
         <div className = "component-container">
             <img className ="researchtext" src = {require('../../images/Researchtext.png').default} alt = 'research title' />
             <div className = "pokemon-container"> 
-            <input className = 'search'
-                type = 'text'
-                name = 'pokename'
-                placeholder = "Pokemon name"
-                value = {searchName.pokemon.pokename}
-                onChange ={handleChange}
-            />
-            <button onClick = {getData} className = "search-btn">Search</button>
+                <input className = 'search'
+                    type = 'text'
+                    name = 'pokename'
+                    placeholder = "Pokemon name"
+                    value = {searchName.pokemon.pokename}
+                    onChange ={handleChange}
+                />
+                <button onClick = {getData} className = "search-btn">Search</button>
             </div>
             <div></div>
         
