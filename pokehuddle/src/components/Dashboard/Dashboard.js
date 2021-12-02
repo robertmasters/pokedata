@@ -14,7 +14,6 @@ function Dashboard() {
 
     return (
         <div className= "dash-container">
-
             <div className= "center-content">
                 <div className= "sidebar">
                     <SideBar />
