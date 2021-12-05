@@ -28,7 +28,7 @@ function handleChange(e) {
    }
     return (
         <div className = "main-container">
-            <div>User auth not set up<Link className = "link" to ='/test/research'>click here </Link>to enter app</div>
+            <div>User auth not set up<Link className = "link" to ='/dashboard/research'>click here </Link>to enter app</div>
             
             <div className = "middle-section">
                 <div className = "ashPikaimg-container">
