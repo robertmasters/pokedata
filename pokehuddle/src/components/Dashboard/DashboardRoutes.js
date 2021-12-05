@@ -1,18 +1,25 @@
 import React from 'react'
-import {BrowserRouter as Router, Route, Switch } from 'react-router-dom'
+import {Route, Switch, useRouteMatch } from 'react-router-dom'
+import FavoritePokemon from '../Pages/FavoritePokemon';
+import Home from '../Pages/Home';
+import Leaderboards from '../Pages/Leaderboards';
+import PageNotFound from '../Pages/PageNotFound';
+import PersonalNotes from '../Pages/PersonalNotes';
+import Photos from '../Pages/Photos';
+import Research from '../Pages/Research';
 
 export default function DashboardRoutes() {
+    const {path} = useRouteMatch()
+
 	return (
-		<Router>
 			<Switch>
-				<Route path = '/test/home' component = {Home} />
-				<Route path = '/test/research' component = {Research} />
-				<Route path = '/test/favoritepokemon' component = {FavoritePokemon} />
-				<Route path = '/test/leaderboards' component = {Leaderboards} />
-				<Route path = '/test/personalnotes' component = {PersonalNotes} />
-				<Route path = '/test/photos' component = {Photos} />
-				<Route component = {Home} />
+				<Route path = {`${path}/home`} component = {Home} />
+				<Route path = {`${path}/research`} component = {Research} />
+				<Route path = {`${path}/favoritepokemon`} component = {FavoritePokemon} />
+				<Route path = {`${path}/leaderboards`} component = {Leaderboards} />
+				<Route path = {`${path}/personalnotes`} component = {PersonalNotes} />
+				<Route path = {`${path}/photos`} component = {Photos} />
+				<Route component = {PageNotFound} /> 
 			</Switch>
-		</Router>
 	);
 };
