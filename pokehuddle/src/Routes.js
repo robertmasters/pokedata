@@ -1,5 +1,5 @@
 import React from 'react';
-import {BrowserRouter as Router, Route, Switch, useLocation} from 'react-router-dom'
+import {Route, Switch, useLocation} from 'react-router-dom'
 import PrivateRoute from './components/PrivateRoute';
 import Login from './components/LoginRegister/Login';
 import Dashboard from './components/Dashboard/Dashboard';
@@ -9,16 +9,14 @@ import PageNotFound from './components/Pages/PageNotFound';
 function Routes() {
 
   return (
-    <Router>
-              <Switch>
-                <PrivateRoute exact path = '/dashboard' component = {Dashboard}></PrivateRoute> 
-                <Route exact path = '/' component = {Login} />
-                <Route exact path = '/test' component = {Dashboard} />
-                <Route exact path = '/register' component = {Register} /> 
-                <Route component = {PageNotFound} /> 
-              </Switch>
-    </Router>
-  );
+    //<PrivateRoute exact path = '/dashboard' component = {Dashboard}></PrivateRoute> 
+      <Switch>
+        <Route exact path = '/' component = {Login} />
+        <Route path = '/dashboard' component = {Dashboard} />
+        <Route path = '/register' component = {Register} /> 
+        <Route component = {PageNotFound} /> 
+      </Switch>
+  )
 };
 
 export default Routes; 
