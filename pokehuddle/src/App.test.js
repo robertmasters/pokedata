@@ -1,6 +1,9 @@
-import { shallow } from "enzyme"
+import React from 'react'
+import {render, screen} from '@testing-library/react'
 import App from './App'
 
 it("renders without crashing", () => {
-	shallow(<App />)
+	render(
+		<App />
+	)
 })
